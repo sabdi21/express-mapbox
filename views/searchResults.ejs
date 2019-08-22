@@ -1,0 +1,13 @@
+<h1>Search Resesults for: <%= city%>, <%= state%> of <%= country %></h1>
+<p>Latitude: <%= lat%></p>
+<p>Longitude: <%= long%></p>
+
+
+<form method="POST" action="/favorites">
+    <input type="hidden" name="city" value="<%= city %>">
+    <input type="hidden" name="state" value="<%= state %>">
+    <input type="hidden" name="lat" value="<%= lat %>">
+    <input type="hidden" name="long" value="<%= long %>">
+   
+    <input type="submit" value="Add to favorites">
+</form>
